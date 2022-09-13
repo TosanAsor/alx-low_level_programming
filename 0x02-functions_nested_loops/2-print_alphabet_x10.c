@@ -1,12 +1,21 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * print_alphabet_x10 - prints lowercase alphabet in ten lines
  *
- * Return: Always 0.
+ * Return: 0
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-    print_alphabet_x10();
-    return (0);
+	char abc;
+	int i;
+
+	for (i = 0; i <= 9; i++)
+	{
+		for (abc = 'a'; abc <= 'z'; abc++)
+		{
+			_putchar (abc);
+		}
+		_putchar ('\n');
+	}
 }
